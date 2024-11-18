@@ -1,8 +1,13 @@
-const {person} = require('./functions.js')
-const names = person("Leonardo", "Rosales");
 
-console.log(names);
+function person(firstName, lastName) {
+    return {
+        firstName,
+        lastName
+    };
+}
 
+console.log(person('Leonardo', 'Rosales'));
 
+module.exports = person
 
 

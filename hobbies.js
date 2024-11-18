@@ -1,4 +1,10 @@
-const {hobby} = require('./functions.js')
-const personHobbies = hobby("Cucina", "Disegno", "Calcio");
 
-console.log(personHobbies);
+function hobby(hobbyOne, hobbyTwo, hobbyThree) {
+    return {
+        hobbies: [hobbyOne, hobbyTwo, hobbyThree]
+    };
+}
+
+console.log(hobby('calcio', 'cucina', 'ballo'));
+
+module.exports = hobby
